@@ -11,6 +11,7 @@
 body{
     font-family: 'Jost', sans-serif;
     color: $gray;
+    overflow-x: hidden;
 }
 
 .title{
@@ -40,6 +41,8 @@ margin-left: 7.6rem;
 .wrapper{
     max-width: 1440px;
     margin:0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .section-main{
@@ -47,26 +50,30 @@ margin-left: 7.6rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 100px;
+    padding-bottom: 207px;
     position: relative;
     &__image{
         position: absolute;  
     }
     &__tomato{
         right: 112px;
-        bottom: 28px;
+        bottom: 135px;
     }
     &__avocado{
         top: 48px;
         right: -26px;
     }
     &__pepper{
-        top: 399px;
-        left: 31px;
+        top: 40.2%;
+        left: 33px;
     }
     &__beans{
-        bottom: 66px;
-        left: -8px;
+        bottom: 172px;
+        left: -6px;
+    }
+    &__cucumber{
+        top: 0px;
+        left: 35.9%;
     }
 
 }
@@ -155,5 +162,17 @@ margin-left: 7.6rem;
            }
         }
         
+    }
+}
+.section-stock{
+    background-image: url(../img/bg-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__text{
+     font-size: 1.5rem;
+     line-height: 1.5;
+     max-width: 690px;
+     margin-top: 3.75rem;
     }
 }
