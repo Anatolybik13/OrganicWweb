@@ -68,8 +68,8 @@ margin-left: 7.6rem;
         right: -26px;
     }
     &__pepper{
-        top: 40.2%;
-        left: 33px;
+        top: 36.7%;
+        left: 29px;
     }
     &__beans{
         bottom: 172px;
@@ -182,13 +182,16 @@ margin-left: 7.6rem;
     }
 }
 .slider{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 95px;
+    margin-top: 90px;
+    &-child{
+        padding: 5px 10px;
+        &:focus{
+            outline: none;
+        }
+    }
     &-item{
         border: 1px solid rgba($gray, $alpha);
         border-radius: 20px;
-        flex: 0 0 32%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -239,7 +242,7 @@ margin-left: 7.6rem;
         bottom: 2.625rem;
         left: 2.25rem;
         max-width: 58%;
-        transform: translate(0px, 243px);
+        transform: translate(0px, 241px);
         transition: 0.3s ease;
         &__title{
             font-size: 1.875rem;
@@ -280,4 +283,34 @@ margin-left: 7.6rem;
         }
        
     }
+}
+
+.slick-prev, .slick-next{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: -62px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 10px;
+    height: 18px;
+    opacity: 0.4;
+    transition: 0.2s ease;
+    cursor: pointer;
+    &:hover{
+        opacity: 1;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.slick-prev{
+    background-image: url(../img/arrow-prev.svg);
+    right: 80px;
+}
+.slick-next{
+    background-image: url(../img/arrow-next.svg);
+    right: 0;
 }
